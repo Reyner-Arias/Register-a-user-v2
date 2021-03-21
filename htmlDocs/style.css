@@ -1,0 +1,55 @@
+
+.jumbotron{
+    background-color:#D3D3D3;
+    color: black;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.buttonStyle{
+  background-color: #289234;
+  border-radius: 25px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  border: none;
+  outline: 0;
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+
+.buttonStyle:hover {
+  background-color: rgb(77, 165, 85);
+  color: white;
+}
+.buttonStyle:focus {
+  background-color: rgb(28, 92, 34);
+  color: white;
+}
+
+.inputStyle {
+  width: 94%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 0px solid rgb(37, 37, 37);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  margin-left: 10px;
+  outline: none;
+}
+
+.labelStyle {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titleStyle {
+  font-weight: bold;
+  margin-left: 30%;
+  margin-top: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
