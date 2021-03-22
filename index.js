@@ -29,11 +29,11 @@ controller.save = (req,res) => {
       if (err){
         if (err.errno == 1062){
           alert("El usuario ya existe en el sistema");
-          res.send("Error");
+          res.redirect('/errorScreen');
         } 
       } else {
         alert("El usuario se registró exitosamente");
-        res.redirect('/userDataTemplate');
+        res.redirect('/userRegisteredCorrectly');
       }
     });
   })
@@ -46,10 +46,25 @@ router.get('/', function(req, res){
 app.use('/', router);
 
 //Get paths
+router.get('/index', function(req, res){
+  res.sendFile(path.join(__dirname, '/index.html'));
+});
+app.use('/index', router);
+
 router.get('/userDataTemplate', function(req, res){
   res.sendFile(path.join(__dirname, '/userDataTemplate.html'));
 });
 app.use('/userDataTemplate', router);
+
+router.get('/errorScreen', function(req, res){
+  res.sendFile(path.join(__dirname, '/errorScreen.html'));
+});
+app.use('/errorScreen', router);
+
+router.get('/userRegisteredCorrectly', function(req, res){
+  res.sendFile(path.join(__dirname, '/userRegisteredCorrectly.html'));
+});
+app.use('/userRegisteredCorrectly', router);
 
 router.get('/style', function(req, res){
   res.sendFile(path.join(__dirname, '/style.css'));
