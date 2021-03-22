@@ -6,48 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name"viewport" content="width = device-width, initial-scale = 1">
 
-    <title>Login</title>
     <title>Sign up</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="style" rel="stylesheet" type="text/css" />
-
+    
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </head>
-    <body>
-      <div class="container float-md-center col-lg-4 col-md-6 col-sm-7">
-        <div class="jumbotron">
-          <p>
-            <div class="row">
-              <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <body>
+    <div class="container float-md-center col-lg-4 col-md-6 col-sm-7">
+      <div class="jumbotron">
+        <p>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <form action="/add" method="post">
                 <label id="userDataTemplateLabel" class="titleStyle">User data template</label><br>
-                <label id="firstNameLabel" class="labelStyle">First name:</label>
-                <input id="firstNameInput" class="inputStyle" title="First name Textbox"></input>
-                <label id="secondNameLabel" class="labelStyle">Second name:</label>
-                <input id="secondNameInput" class="inputStyle" title="Second name Textbox"></input>
-                <label id="firstLastnameLabel" class="labelStyle">First lastname:</label>
-                <input id="firstLastnameInput" class="inputStyle" title="First lastname Textbox"></input>
-                <label id="secondLastnameLabel" class="labelStyle">Second lastname:</label>
-                <input id="secondLastnameInput" class="inputStyle" title="Second lastname Textbox"></input>
                 <label id="IDLabel" class="labelStyle">ID:</label>
-                <input id="IDInput" class="inputStyle" title="ID Textbox"></input>
+                <div class="form-group">
+                  <input name="ID" id="IDInput" class="inputStyle form-control" title="ID Textbox"></input>
+                </div>
+                <label id="firstNameLabel" class="labelStyle">First name:</label>
+                <div class="form-group">
+                  <input name="Name" id="firstNameInput" class="inputStyle form-control" title="First name Textbox"></input>
+                </div>
+                <label id="secondNameLabel" class="labelStyle">Second name:</label>
+                <div class="form-group">
+                  <input name="middleName" id="secondNameInput" class="inputStyle form-control" title="Second name Textbox"></input>
+                </div>
+                <label id="firstLastnameLabel" class="labelStyle">First lastname:</label>
+                <div class="form-group">
+                  <input name="firstLastName" id="firstLastnameInput" class="inputStyle form-control" title="First lastname Textbox"></input>
+                </div>
+                <label id="secondLastnameLabel" class="labelStyle">Second lastname:</label>
+                <div class="form-group">
+                  <input name="secondLastName" id="secondLastnameInput" class="inputStyle form-control" title="Second lastname Textbox"></input>
+                </div>
                 <label id="usernameLabel" class="labelStyle">Username:</label>
-                <input id="usernameInput" class="inputStyle" title="Username Textbox"></input>
-                <label id="passwordLabel" class="labelStyle">Password:</label>
-                <input id="passwordInput" class="inputStyle" title="Password Textbox"></input>
+                <div class="form-group">
+                  <input name="Username" id="usernameInput" class="inputStyle form-control" title="Username Textbox"></input>
+                </div>
                 <label id="phonenumberLabel" class="labelStyle">Phone number:</label>
-                <input id="phonenumberInput" class="inputStyle" title="Phone number Textbox"></input>
+                <div class="form-group">
+                  <input name="phoneNumber" id="phonenumberInput" class="inputStyle form-control" title="Phone number Textbox"></input>
+                </div>
                 <label id="departmentLabel" class="labelStyle">Department:</label>
-                <input id="departmentInput" class="inputStyle" title="Department Textbox"></input>
+                <div class="form-group">
+                  <input name="Department" id="departmentInput" class="inputStyle form-control" title="Department Textbox"></input>
+                </div>
                 <label id="addressLabel" class="labelStyle">Address:</label>
-                <input id="addressInput" class="inputStyle" title="Address Textbox"></input>
-                <a id="acceptButton" class="btn btn-info buttonStyle" title="Accept button">Accept</a>
+                <div class="form-group">
+                  <input name="Address" id="addressInput" class="inputStyle form-control" title="Address Textbox"></input>
+                </div>
+                <label id="passwordLabel" class="labelStyle">Password:</label>
+                <div class="form-group">
+                  <input name="Password" id="passwordInput" class="inputStyle form-control" title="Password Textbox"></input>
+                </div>
+                <button id="acceptButton" type="submit" class="btn btn-info buttonStyle" title="Accept button">
+                  Accept
+                </button>
+              </form>
             </div>
-          </p>
-        </div>
+          </div>
+        </p>
       </div>
-
-      <script src="index.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    </body>
+    </div>
+  </body>
 </html>
